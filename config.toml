@@ -1,0 +1,4 @@
+languageCode = "en-us"
+title = "azotos.gr"
+baseurl = "https://www.azotos.gr/"
+theme="hugo-zero"

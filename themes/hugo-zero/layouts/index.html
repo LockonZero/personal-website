@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/zero.css">
+<body>
+<div class="row">
+  <nav class="sidebar" id="sidebar">
+    <div class="row">
+      <div class="twelve columns">
+        <img class="profile-pic" src="img/profile.png" alt="Profile Picture"/>
+      </div>
+      <div class="twelve columns second">
+        <a class="text" href="#" id="minimize"><span>$BLOG</span></a>
+        <a class="text" href="/cv"><span>$CV</span></a>
+        <!--<span>CONTACT</span>-->
+        <a href="https://github.com/LockonZero" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+        <a href="https://bitbucket.org/LockonZero" target="_blank"><i class="fa fa-2x fa-bitbucket"></i></a>
+        <a href="https://twitter.com/AzotosTweets" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+        <a href="mailto:hello@azotos.gr"><i class="fa fa-2x fa-envelope"></i></a>
+      </div>
+    </div>
+  </nav>
+  <div id="main-container" class="container">
+    <section id="main">
+      {{ range .Data.Pages }}
+
+      <div>
+        {{ .Render "summary"}}
+      </div>
+      {{ end }}
+
+    </section>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  document.getElementById("minimize").addEventListener("click", function(){
+    var d = document.getElementById("sidebar");
+    d.className += " mini";
+    var m = document.getElementById("main-container");
+    m.className += " appear";
+
+
+  });
+  WebFont.load({
+    google: {
+      families: ['Fira Mono', 'Droid Serif']
+    }
+  });
+</script>
+</body>
+</html>
