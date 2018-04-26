@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5d502609-5c97-43b4-bcec-4368502e04ae" name="Winagro (live)" url="http://144.76.104.71">
+        <fileTransfer host="144.76.104.71" port="22" rootFolder="/var/www/public/cloud.winagro.gr" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b4947f59-f680-4a8c-86ed-479b536210dc" name="Winagro (dev)" url="http://144.76.104.71">
+        <fileTransfer host="144.76.104.71" port="22" rootFolder="/var/www/public/dev.winagro.gr" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
