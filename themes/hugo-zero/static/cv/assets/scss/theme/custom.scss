@@ -1,0 +1,32 @@
+body {
+  font-family: 'Cutive Mono', monospace;
+}
+
+.main-wrapper {
+  .section-title {
+
+    .icon-holder {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+  .sidebar-wrapper {
+
+
+  .name {
+    font-size: 28px;
+  }
+  .profile {
+    max-width: 150px;
+    border-radius: 50%;
+    padding: 12px 12px 0px 12px;
+    background-color: darken($theme-color, 15%);;
+  }
+    .contact-list {
+      .icon-holder {
+        margin-right: 5px;
+      }
+    }
+}
