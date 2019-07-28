@@ -4,8 +4,6 @@ tags = []
 title = "Welcome to my domain!"
 +++
 
-## Welcome to my domain!
-
 Hello everyone! Welcome to my blog!
 
 Here we will learn about fun new things (mostly programming, duh!), interesting frameworks and technologies used to build the awesome software we all use every day!

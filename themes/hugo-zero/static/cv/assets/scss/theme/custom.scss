@@ -1,5 +1,5 @@
 body {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Overpass Mono', monospace;
 }
 
 .main-wrapper {
@@ -19,10 +19,10 @@ body {
     font-size: 28px;
   }
   .profile {
-    max-width: 150px;
+    max-width: 170px;
     border-radius: 50%;
-    padding: 12px 12px 0px 12px;
-    background-color: darken($theme-color, 15%);;
+    background-color: darken($theme-color, 15%);
+    padding: 12px 12px 0 12px;
   }
     .contact-list {
       .icon-holder {
