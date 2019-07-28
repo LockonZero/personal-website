@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Overpass Mono', monospace;
 }
 
 .sidebar {
@@ -76,6 +76,7 @@ article.post {
   }
   h2 {
     margin-bottom: 0;
+    line-height: 1.5;
   }
 }
 
