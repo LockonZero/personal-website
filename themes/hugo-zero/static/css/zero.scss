@@ -2,6 +2,12 @@ html, body {
   font-family: 'Overpass Mono', monospace;
 }
 
+#list {
+  li {
+    list-style: none;
+  } 
+}
+
 .sidebar {
   &.mini {
     width: 40%;
