@@ -1,18 +1,18 @@
-    {{ partial "header.html" . }}
-    <body>
-        <div class="content-wrapper">
-            <div class="content-wrapper__inner">
-                {{ range .Data.Pages.GroupByDate "2006" }}
-                <ul id="list">
-                    {{range .Pages }}
-                    <li>
-                        {{ .Render "summary"}}
+{{ partial "header.html" . }}
+<body>
+<div class="content-wrapper">
+    <div class="content-wrapper__inner">
+        {{ range .Data.Pages.GroupByDate "2006" }}
+        <ul id="list">
+            {{range .Pages }}
+            <li>
+                {{ .Render "summary"}}
 
-                    </li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-            </div>
-        </div>
-    </body>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
+</div>
+</body>
 </html>
