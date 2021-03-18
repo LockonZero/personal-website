@@ -2,51 +2,14 @@ html, body {
   font-family: 'Overpass Mono', monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', 'serif';
+}
+
 #list {
   li {
     list-style: none;
   } 
-}
-
-.sidebar {
-  &.mini {
-    width: 40%;
-    //float: left;
-  }
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  -webkit-transition: width 0.5s; /* Safari */
-  transition: width 0.5s;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(
-                  rgba(0, 0, 0, 0.5),
-                  rgba(0, 0, 0, 0.5)
-  ), url(../img/sidebar-bg.jpg);
-  .second {
-    margin-top: 20px;
-      a {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        i {
-          margin: 10px;
-
-        }
-        &.text {
-          margin: 10px;
-          font-size: 2em;
-        }
-      }
-  }
-
-
 }
 
 #main-container {
@@ -56,7 +19,6 @@ html, body {
   display: none;
   height: 100%;
   position: absolute;
-  margin-left: 40%;
   padding-left: 25px;
   padding-right: 25px;
   -webkit-transition: display 0.5s; /* Safari */
@@ -64,15 +26,8 @@ html, body {
   //float: left;
   &.appear {
     display: block;
-    width: 60%;
+    width: 100%;
   }
-}
-
-.profile-pic {
-  border-radius: 50%;
-  width: 150px;
-  //display: inline-block;
-  //vertical-align: middle;
 }
 
 article.post {
