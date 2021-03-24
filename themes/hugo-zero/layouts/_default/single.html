@@ -1,13 +1,32 @@
-{{ partial "header.html" . }}
+<html>
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/zero.css">
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <body>
+    <div class="row">
+    <div id="main-container" class="container appear">
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
             <div class="post">
-                <h1>{{ .Title }}</h1>
-                <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+                <h1 class="post-title">{{ .Title }}</h1>
+		<span class="post-date">>> {{ .Date.Format "Mon, Jan 2, 2006" }}</span>
                 {{ .Content }}
             </div>
         </div>
     </div>
+    </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Raleway', 'Source Code Pro']
+        }
+    });
+</script>
 </body>
 </html>

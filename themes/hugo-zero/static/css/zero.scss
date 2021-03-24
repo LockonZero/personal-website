@@ -1,9 +1,10 @@
 html, body {
-  font-family: 'Overpass Mono', monospace;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', 'serif';
+  // font-family: 'Source Code Pro', 'serif';
+  
+  .post-title, .post-title > a {
+    text-decoration: underline;
+    color: black;
+  }
 }
 
 #list {
@@ -11,25 +12,19 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
   } 
 }
-
+/*
 #main-container {
-  width: 0;
-  height: 0;
   max-width: none;
-  display: none;
   height: 100%;
-  position: absolute;
+  width: 100%;
   padding-left: 25px;
   padding-right: 25px;
-  -webkit-transition: display 0.5s; /* Safari */
-  transition: display 0.5s;
-  //float: left;
-  &.appear {
-    display: block;
-    width: 100%;
-  }
 }
-
+*/
+/*.post-date {
+    padding-bottom: 2em;
+}*/
+/*
 article.post {
   margin-bottom: 1rem;
   p {
@@ -40,4 +35,4 @@ article.post {
     line-height: 1.5;
   }
 }
-
+*/
