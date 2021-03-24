@@ -1,14 +1,19 @@
 <article class="post">
 <header>
-<h2 class="post-list__post-title">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</h2>
+	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
 </header>
-<div class="post-list__meta">{{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min
+<div class="post-list__meta">
 <div class="excerpt">
+    <p>
+    >> {{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min
+    </p>
+    <p>
     {{ if .Params.excerpt }}
         {{ .Params.excerpt }}
     {{ else }}
         {{ .Summary }}
     {{ end }}
+    </p>
 </div>
 {{ if .Params.tags }}
     • tags:

@@ -1,8 +1,11 @@
 <html>
-<link rel="stylesheet" href="/css/skeleton.css">
-<link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
 <link rel="stylesheet" href="/css/zero.css">
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
 <body>
 <div class="row">
     <div id="main-container" class="container appear">
@@ -21,7 +24,7 @@
 <script>
     WebFont.load({
         google: {
-            families: ['Overpass Mono']
+            families: ['Raleway', 'Source Code Pro']
         }
     });
 </script>

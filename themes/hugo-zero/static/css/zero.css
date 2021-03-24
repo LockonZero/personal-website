@@ -1,2 +1,33 @@
-html,body{font-family:'Overpass Mono', monospace}h1,h2,h3,h4,h5,h6{font-family:'Oswald', 'serif'}#list li{list-style:none}#main-container{width:0;height:0;max-width:none;display:none;height:100%;position:absolute;padding-left:25px;padding-right:25px;-webkit-transition:display 0.5s;transition:display 0.5s}#main-container.appear{display:block;width:100%}article.post{margin-bottom:1rem}article.post p{text-align:justify}article.post h2{margin-bottom:0;line-height:1.5}
+html .post-title, html .post-title > a, body .post-title, body .post-title > a {
+  text-decoration: underline;
+  color: black; }
+
+#list li {
+  list-style: none; }
+
+/*
+#main-container {
+  max-width: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+*/
+/*.post-date {
+    padding-bottom: 2em;
+}*/
+/*
+article.post {
+  margin-bottom: 1rem;
+  p {
+    text-align: justify;
+  }
+  h2 {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
+*/
+
 /*# sourceMappingURL=zero.css.map */
