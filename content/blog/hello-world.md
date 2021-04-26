@@ -1,11 +1,11 @@
+
 +++
 date = "2015-10-01T13:50:46+02:00"
 tags = ["welcome"]
 title = "Welcome to my domain!"
 description = ""
 categories = [
-    "Development",
-    "golang",
+    "article"
 ]
 highlight = "true"
 +++
