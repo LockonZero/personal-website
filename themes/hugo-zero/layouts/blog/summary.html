@@ -1,26 +1,21 @@
 <article class="post">
 <header>
-	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
+	<h2 class="post__title"><a href="{{ .Permalink }}"> >>{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
 </header>
-<div class="post-list__meta">
-<div class="excerpt">
+<div class="post__meta">
     <p>
-    >> {{ .Date.Format "Jan 2, 2006" }} • Read in {{ .ReadingTime }} Min
+        • Posted: <span>{{ .Date.Format "January 2, 2006" }}</span> • Read Time: <span>{{ .ReadingTime }} Min</span>
     </p>
+</div>
+<div class="post__desc">
+
     <p>
-    {{ if .Params.excerpt }}
-        {{ .Params.excerpt }}
+    {{ if .Params.short }}
+        {{ .Params.short }}
     {{ else }}
         {{ .Summary }}
     {{ end }}
     </p>
 </div>
-{{ if .Params.tags }}
-    • tags:
-    {{ range $index, $element := .Params.tags }}
-        <a class="tag" href="/tags/{{ $element | urlize }}">{{ $element }}</a>
-    {{ end }}
-{{ end }}
-</div>
-<hr class="post-list__divider" />
+<hr class="post__divider" />
 </article>
