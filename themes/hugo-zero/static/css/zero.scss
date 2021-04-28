@@ -1,17 +1,22 @@
+/* DEFINE COLORS UP HERE FOR TO SIMPLIFY CHANGES */
+
+$blog-header-bg-color: #000000; // black
+$blog-header-fg-color: #ffffff; // white
+$blog-container-bg-color: #f3f3f3; // light grey
+$blog-container-fg-color: #000000; // black
+$blog-separator-color: #eee;
+$blog-heading-color: #111;
+
+
 html {
   margin: 0 20px;
   font-family: "Gill Sans";
 }
 
-.main-header {
-  background: #d0d0d0;
-  text-align: center;
-}
-
 .container {
   padding: 1px 20px;
-  background: #f3f3f3;
-
+  background: $blog-container-bg-color;
+  color: $blog-container-fg-color;
 }
 
 h1 { font-size: 2.2em; margin-bottom: 0; }
@@ -22,17 +27,18 @@ h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 :is(h1, h2, h3, h4, h5, h6) a {
-  color: #111;
+  color: $blog-heading-color;
   text-decoration: none;
 }
 
 h1 {
-  color: #ffffff;
-  background: #000000;
+  color: $blog-header-fg-color;
+  background: $blog-header-bg-color;
+  text-align: center;
 }
 
 .post__meta {
@@ -50,7 +56,7 @@ h1 {
 }
 
 hr {
-  color: #eee;
+  color: $blog-separator-color;
 }
 
 .article {
@@ -58,3 +64,37 @@ hr {
     margin-top: 10px;
   }
 }
+
+
+/*
+@media (prefers-color-scheme: dark) {
+  $blog-header-bg-color: #cecece; // white
+  $blog-header-fg-color: #121212; // black
+  $blog-container-bg-color: #121212; // very dark grey
+  $blog-container-fg-color: #cecece; // white
+  $blog-separator-color: #111;
+  $blog-heading-color: #cecece;
+
+  html {
+    background-color: $blog-container-bg-color;
+  }
+
+  hr {
+    color: $blog-separator-color;
+  }  
+
+  h1 {
+    color: $blog-header-fg-color;
+    background: $blog-header-bg-color;
+  }
+
+  .container {
+    background: $blog-container-bg-color;
+    color: $blog-container-fg-color;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) a {
+    color: $blog-heading-color;
+  }
+}
+*/

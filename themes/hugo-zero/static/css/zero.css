@@ -1,14 +1,12 @@
+/* DEFINE COLORS UP HERE FOR TO SIMPLIFY CHANGES */
 html {
   margin: 0 20px;
   font-family: "Gill Sans"; }
 
-.main-header {
-  background: #d0d0d0;
-  text-align: center; }
-
 .container {
   padding: 1px 20px;
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  color: #000000; }
 
 h1 {
   font-size: 2.2em;
@@ -31,7 +29,7 @@ h6 {
   font-size: .75em; }
 
 p {
-  font-size: 1.1em; }
+  font-size: 1.2em; }
 
 :is(h1, h2, h3, h4, h5, h6) a {
   color: #111;
@@ -39,7 +37,8 @@ p {
 
 h1 {
   color: #ffffff;
-  background: #000000; }
+  background: #000000;
+  text-align: center; }
 
 .post__meta p {
   margin-top: 0;
@@ -55,5 +54,38 @@ hr {
 
 .article .post__meta {
   margin-top: 10px; }
+
+/*
+@media (prefers-color-scheme: dark) {
+  $blog-header-bg-color: #cecece; // white
+  $blog-header-fg-color: #121212; // black
+  $blog-container-bg-color: #121212; // very dark grey
+  $blog-container-fg-color: #cecece; // white
+  $blog-separator-color: #111;
+  $blog-heading-color: #cecece;
+
+  html {
+    background-color: $blog-container-bg-color;
+  }
+
+  hr {
+    color: $blog-separator-color;
+  }  
+
+  h1 {
+    color: $blog-header-fg-color;
+    background: $blog-header-bg-color;
+  }
+
+  .container {
+    background: $blog-container-bg-color;
+    color: $blog-container-fg-color;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) a {
+    color: $blog-heading-color;
+  }
+}
+*/
 
 /*# sourceMappingURL=zero.css.map */
