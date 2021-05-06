@@ -1,21 +1,8 @@
 <article class="post">
-<header>
-	<h2 class="post__title"><a href="{{ .Permalink }}"> >>{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
-</header>
-<div class="post__meta">
-    <p>
-        &sect; Posted: <span>{{ .Date.Format "January 2, 2006" }}</span> &sect; Read Time: <span>{{ .ReadingTime }} Min</span>
-    </p>
-</div>
-<div class="post__desc">
-
-    <p>
-    {{ if .Params.short }}
-        {{ .Params.short }}
-    {{ else }}
-        {{ .Summary }}
-    {{ end }}
-    </p>
-</div>
-<hr class="post__divider" />
+<h4 class="post__title">
+	<a href="{{ .Permalink }}"> {{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+</h4>
+<p class="post__meta">
+<span>{{ .Date.Format "2/Jan/06" }}</span>
+</p>
 </article>

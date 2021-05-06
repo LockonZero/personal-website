@@ -1,9 +1,5 @@
 <html>
-<link rel="stylesheet" href="/css/zero.css">
-{{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-{{ end -}}
-
+{{ partial "header.html" . }}
 <body class="article">
     <header class="main-header">
         <h1 class="post-title"> >>{{ .Title }}</h1>
@@ -17,5 +13,6 @@
                 <p>&sect; Posted: <span>{{ .Date.Format "January 2, 2006" }}</span> &sect; Read Time: <span>{{ .ReadingTime }} Min</span></p>
             </div>
     </div>
+{{ partial "footer.html" . }}
 </body>
 </html>

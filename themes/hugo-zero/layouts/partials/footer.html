@@ -1,0 +1,24 @@
+<footer>
+  <div>
+    <p>
+    &copy; {{ now.Format "2006" }} Alex Zotos.
+    <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>; please attribute properly and link back.
+    </p>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ['DM Mono:400,700']
+		}
+	});
+
+	(function(d) {
+		var wf = d.createElement('script'), s = d.scripts[0];
+		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+		wf.async = true;
+		s.parentNode.insertBefore(wf, s);
+   	})(document);
+</script>

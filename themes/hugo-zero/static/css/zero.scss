@@ -10,11 +10,11 @@ $blog-heading-color: #111;
 
 html {
   margin: 0 20px;
-  font-family: "Gill Sans";
+  font-family: "DM Mono", monospace;
 }
 
 .container {
-  padding: 1px 20px;
+  padding: 20px 20px;
   background: $blog-container-bg-color;
   color: $blog-container-fg-color;
 }
@@ -25,6 +25,26 @@ h3 { font-size: 1.37em; }
 h4 { font-size: 1.22em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+article.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    h4 {
+	margin: 0;
+	font-weight: 400;
+	a { 
+	    border-bottom: 2px solid transparent;
+	    transition: border 300ms linear;
+	    &:hover {
+	        border-bottom: 2px solid black;
+	    }
+	}
+    }
+	
+}
 
 p {
   font-size: 1.2em;
@@ -39,16 +59,14 @@ h1 {
   color: $blog-header-fg-color;
   background: $blog-header-bg-color;
   text-align: center;
+  padding: 10px 0;
 }
 
 .post__meta {
-  p {
-    margin-top: 0;
-    font-size: 0.9em;
+    margin: 0;
+    font-size: 0.8em;
     span {
-      text-decoration: underline;
     }
-  }
 }
 
 .post__desc {
@@ -65,6 +83,9 @@ hr {
   }
 }
 
+footer {
+    font-size: 0.5em;
+}
 
 /*
 @media (prefers-color-scheme: dark) {
