@@ -3,24 +3,25 @@
 $blog-header-bg-color: #000000; // black
 $blog-header-fg-color: #ffffff; // white
 $blog-container-bg-color: #f3f3f3; // light grey
-$blog-container-fg-color: #000000; // black
+$blog-container-fg-color: #333; // black
 $blog-separator-color: #eee;
-$blog-heading-color: #111;
+$blog-heading-color: #333;
 
 
 html {
-  margin: 0 20px;
   font-family: "DM Mono", monospace;
 }
 
 .container {
   padding: 20px 20px;
-  background: $blog-container-bg-color;
+  // background: $blog-container-bg-color;
   color: $blog-container-fg-color;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-h1 { font-size: 2.2em; margin-bottom: 0; }
-h2 { font-size: 1.7em; margin-bottom: 5px; }
+h1 { font-size: 2.2em; margin: 0; }
+h2 { font-size: 1.7em; }
 h3 { font-size: 1.37em; }
 h4 { font-size: 1.22em; }
 h5 { font-size: .83em; }
