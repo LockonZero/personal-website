@@ -13,9 +13,9 @@ tags = [
 Books that I have read/intend to read in 2021:
 
 - ~~Deep Work - Cal Newport~~ (4/21)
-- The Power of Habit - Charles Duhigg
-- Algorithms to Live By. The Computer Science of Human Decisions - Brian Christian, Tom Griffiths
-- Subliminal: How Your Unconscious Mind Rules Your Behavior - Leonard Mlodinow 
+- ~~The Power of Habit - Charles Duhigg~~ (9/21)
+- ~~Algorithms to Live By. The Computer Science of Human Decisions - Brian Christian, Tom Griffiths~~ (12/21)
+- Subliminal: How Your Unconscious Mind Rules Your Behavior - Leonard Mlodinow __>>Moved to 2022__
 
 _This list will be kept updated_
 
