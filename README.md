@@ -4,12 +4,20 @@
 
 ### For the SASS
 
-- Navigate to the scss folder in the theme and run the following command in order to watch for changes:
+Navigate to the scss folder in the theme and run the following command in order to watch for changes:
+
 ```bash
 scss --no-cache --watch zero.scss
 ```
 
-- Serve the installation locally (for development)
+Serve the installation locally (for development)
 ```
 hugo server --disableFastRender
+```
+
+### Sync files
+
+From project root run: 
+```bash
+rsync -arvz -e 'ssh -p <port-number>' --progress ./public/ user@remote-server:/remote/folder
 ```
