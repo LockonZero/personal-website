@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "ramblings of a mad programmer"
-baseurl = "https://www.azotos.gr"
+baseurl = "https://www.azotos.com"
 theme="hugo-zero"
 
 RelativeURLs=true

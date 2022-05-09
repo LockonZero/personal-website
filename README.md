@@ -29,3 +29,4 @@ rsync -arvz -e 'ssh -p <port-number>' --progress ./public/ user@remote-server:/r
 - Fix the main text font size (too large atm)
 - Convert dates to dd/mon/yy
 - Fix hugo warnings
+- Dark theme (and control)
